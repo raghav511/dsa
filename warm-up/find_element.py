@@ -3,12 +3,12 @@ import datetime
 def find_num(ele,arr):
     # brute force
     start = datetime.datetime.now()
-    for element in arr:
+    for index,element in enumerate(arr):
         if ele==element:
             end = datetime.datetime.now()
             total_time = end - start
             print(f'Time taken: {total_time}')
-            return True
+            return index
     end = datetime.datetime.now()
     total_time = end - start
     print(f'Time taken: {total_time}')
